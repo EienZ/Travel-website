@@ -1,0 +1,83 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #6c2bd9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #5621b4;
+        }
+        .social {
+            display: flex;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        .google-btn {
+            background-color: #34a853; /* green */
+            color: white;
+        }
+        .facebook-btn {
+            background-color: #3b5998; /* blue */
+            color: white;
+        }
+        .link {
+            text-align: center;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Login Now</h2>
+    <form>
+        <input type="email" placeholder="enter your email" required>
+        <input type="password" placeholder="enter your password" required>
+        <button type="submit">Login Now</button>
+    </form>
+    <div class="social">
+        <button type="button" class="google-btn">Login with Google</button>
+        <button type="button" class="facebook-btn">Login with Facebook</button>
+    </div>
+    <div class="link">
+        don't have an account? <a href="register.html">register now</a>
+    </div>
+</div>
+</body>
+</html>
